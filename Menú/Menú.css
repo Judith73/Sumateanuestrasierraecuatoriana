@@ -1,0 +1,450 @@
+/*Letra de el titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:wght@100&display=swap');
+/*letra*/
+body{
+    font-family: 'Courgette', cursive;
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Raya y la letra*/
+hr{
+    height: 1px;
+    margin-bottom: auto;
+    border: none;
+    background: #000000;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+p,
+h1{
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+h1{
+    margin-top: 40px;
+    font-weight: normal;
+    font-family: 'Pacifico';
+    color: #000000;
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Baner junto logo*/
+.logo{
+    font-family: 'Pacifico';
+    font-size: 60px;
+}
+.logo_main{
+    height: 200px;
+    padding: -100px;
+    color: #F4F1BB;
+    cursor: default;
+}
+
+#banner {
+    margin-top: 0px;
+    position: relative;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+#banner .logo_main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Para que se pueda acomodar a celulares y mas*/
+@media (min-width: 480px){
+    #banner h2{
+        font-size: 40px;
+    }
+}
+@media (min-width: 768px){
+    #banner {
+        height: 200;
+        overflow: hidden;
+    }
+    #banner img{
+        height: auto;
+        margin-top: -100px;
+    }
+}
+
+@media (min-width: 1024px){
+    #banner img{
+        margin-top: -200px;
+    }
+}
+
+.menu {
+    position: static;
+    top: 50px;
+    margin-left: 11em;
+    left: 0;
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.9);
+    float: right;
+    display: flex;
+}
+
+.menu a{
+    display: block;
+    color: #ffee05;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    transition: all 0.50s;
+}
+
+.menu a:hover{
+    background: #b62323;
+}
+
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Margen y color del margen*/
+.logo_small{
+    display: inline-block;
+    font-size: 20px;
+    padding: 4px;
+    margin-left: 10px;
+    color: #019CDE;
+    cursor: pointer;
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Color del margen pegueño*/
+.nav{
+    float: left;
+    width: 100%;
+    background: #000000;
+    color: #ffee05;
+    padding: 0 150px;
+    transition: .4s ease all;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    
+}
+.nav .wrap{
+    position: relative;
+    left: -10px;
+    transition: 0.4s ease all;
+}
+nav{
+    display: inline-block;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    padding: 20px;
+    margin: 0;
+    color: #ffd900;
+    text-decoration: none;
+    transition: 0.2s ease all;
+}
+/*************************************************************************************************/
+/*************************************************************************************************/
+/*Video e imagen*/
+video{
+    padding-top: 20px;
+    width: 50%;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Cuadros de los lugares turisticos*/
+*{
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+    padding: 0;
+    margin: 0;
+}
+.lugaresturisticos {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.lugaresturisticos{
+    background: #ffffff;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 40%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 #df303080;
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(0, 0, 0, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Cuadros*/
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Iconos de redes sociales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --facebook:#3b5999;
+    --twitter:#40bee4;
+}
+.redes-container{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50 px;
+    text-align: center;
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background-color: #333;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+    transition: .2s;
+}
+
+.redes-container ul:hover a{
+    filter:blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translate(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+    background-color: var(--facebook);
+}
+
+.redes-container ul li .twitter:hover{
+    background-color: var(--twitter);
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+/*Creditos finales*/
+footer{
+    background: #2c2a2a;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.658);
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #019CDE;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ffee05;
+    text-align: center;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* Footer */
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #ffd900;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+
+/*MENU RESPONSIVE*/
+
+/*@media screen and (max-width: 800px){
+    .btn-menu{
+        transform: translateX(0px);
+    }
+    
+    .logo_main{
+        display: none;
+    }
+    
+    .nav{
+        width: 70%;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        padding: 0px;
+        transform: translateX(-100%);
+    }
+    
+    
+    .nav .wrap{
+        left: 0;
+    }
+    
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+    }
+    
+    nav li{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .logo_small{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    
+    nav a{
+        width: 100%;
+        display: block;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .nav-toggle{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+        transform: translateX(0%);
+    }
+    
+    .main{
+    background: white;
+    padding: 20px 60px;
+} 
+}*/
+
